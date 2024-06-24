@@ -9,13 +9,13 @@ import { EditorContext } from "../pages/editor.pages";
 import EditorJS from "@editorjs/editorjs";
 import { tools } from "./tools.component";
 import axios from "axios";
-// import {UserContext} from "../App";
+import {UserContext} from "../App";
 
 const BlogEditor=() => {
 
     let { blog, blog:{title, banner, content, tags, des },setBlog,textEditor, setTextEditor,setEditorState}=useContext(EditorContext)
 
-    // let {userAuth:{access_token} } = useContext(UserContext);
+    let {userAuth:{access_token} } = useContext(UserContext);
 
     let navigate=useNavigate();
 

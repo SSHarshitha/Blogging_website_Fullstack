@@ -4,7 +4,7 @@ import { EditorContext } from "../pages/editor.pages";
 import { useContext } from "react";
 import Tag from "./tags.component";
 import axios from "axios";
-// import {UserContext} from "../App";
+import {UserContext} from "../App";
 import { useNavigate } from "react-router-dom";
 
 const PublishForm=() => {
@@ -15,7 +15,7 @@ const PublishForm=() => {
 
     let { blog,blog:{banner,title,tags,des,content},setEditorState,setBlog }= useContext(EditorContext);
 
-    // let{userAuth: {access_token}}=useContext(UserContext);
+    let{userAuth: {access_token}}=useContext(UserContext);
 
     let navigate=useNavigate();
 
