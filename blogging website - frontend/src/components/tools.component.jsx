@@ -59,6 +59,23 @@ const uploadImageByUrl = (url) => {
   });
 }
 
+// const uploadImageByUrl=(e)=>{
+//     let link = new Promise((resolve,reject)=>{
+//         try{
+//             resolve(e)
+//         }
+//         catch(err){
+//             reject(err)
+//         }
+//     })
+//     return link.then(url=>{
+//         return{
+//             success:1,
+//             file:{ url }
+//         }
+//     })
+// }
+
 export const tools={
     embed: Embed,
     list:{

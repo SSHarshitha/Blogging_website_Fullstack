@@ -33,9 +33,7 @@ const Editor = ()=> {
       access_token===null?<Navigate to="/signin"/>
        : editorState=="editor"?<BlogEditor/>:<PublishForm/>
        }
-       {/* <BlogEditor/>
-       <PublishForm/> */}
-
+       
        
     </EditorContext.Provider>
    
